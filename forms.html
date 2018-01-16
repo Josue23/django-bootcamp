@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<<<<<<< HEAD
     <title>Forms</title>
 </head>
 <body>
@@ -34,5 +35,49 @@
         <input type="text" value="Text goes here">
     </form>
     
+=======
+    <title>Forms and Labels</title>
+</head>
+<body>
+    <h1>Hotel Feedback Form</h1>
+    <h3>Radio buttons</h3>
+    <form action="" method="get">
+        <!-- link radio buttons together using the same name -->
+        <h3>Are you inside the US or outside the US?</h3>
+        <label for="inusa">Inside US: </label>
+        <input type="radio" id="inusa" name="location" value="inside">
+        <br />
+        <label for="outusa">Outside US: </label>
+        <input type="radio" id="outusa" name="location" value="outside">
+
+        <!-- 
+        a querystring envia o name e o value
+         http://127.0.0.1:9001/forms.html?location=inside&stars=Okay&mytext=
+        -->
+        <h3>How was your service?</h3>
+        <select name="stars" id="">
+            <option value="Great">3</option>
+            <option value="Okay">2</option>
+            <option value="Bad">1</option>
+        </select>
+        
+        <h3>Any other feedback?</h3>
+        <textarea name="mytext" id="" cols="30" rows="10"></textarea>
+        <br />
+        <input type="submit" value="SUBMIT">
+    </form>
+    <br />
+    <br />
+    <br />
+    <form method="get" action="">
+        <label for="useremail">E-mail</label>
+        <input type="text" name="useremail">
+        <br />
+        <label for="password">Password</label>
+        <input type="password" name="password">
+        <br />
+        <input type="submit" name="" id="" value="Send">
+    </form>
+>>>>>>> 53d35d8cccf5259df147bfeb768f4fbc4abc5c7a
 </body>
 </html>
